@@ -2285,7 +2285,9 @@ var JSEncrypt = /** @class */ (function () {
     return JSEncrypt;
 }());
 
-// window.JSEncrypt = JSEncrypt;
+if (typeof window !== 'undefined') {
+    window.JSEncrypt = JSEncrypt;
+}
 
 exports.JSEncrypt = JSEncrypt;
 exports.default = JSEncrypt;
